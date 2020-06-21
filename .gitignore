@@ -1,0 +1,12 @@
+*.pyc
+*.swp
+bin/qfcommon
+*.log
+*.idea
+tmp/
+log/
+test/
+chnl
+*.der
+*.pem
+*.key

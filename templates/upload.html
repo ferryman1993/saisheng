@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>上传</title>
+</head>
+<body>
+<form method="post" action="/games/upload/">
+    <h3>
+        当前客户端 {{ user }}，请上传分数：<input type="text" id="score" name="score" placeholder="可输入范围：1~10000000。"> 分。
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <button class="btn btn-info btn-lg btn-block" type="submit">提交</button>
+
+        <div id="score_err" style="color: red;"></div>
+        <div id="score_err" style="color: red;"></div>
+    </h3>
+
+</form>
+
+
+<form method='get' action="/games/query_rank/">
+    <h3>
+        起始位置：<input type="text"  name="start">
+        结束位置：<input type="text"  name="end">
+
+        <button class="btn btn-info btn-lg btn-block"
+                type="submit">查询排名</button>
+    </h3>
+
+</form>
+&nbsp;&nbsp;
+<a href="/logout/"><input name="" type="button" value="退出"/></a>
+
+</body>
+
